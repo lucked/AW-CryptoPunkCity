@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "target": "es5"
+  },
+  "include": ["**/*.ts", "src/socket.js", "src/debug/testBtn.js", "src/map/seats.js", "src/client/socket.js"]
+}

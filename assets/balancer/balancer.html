@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/balancer/balancer.css"/>
+        <link rel="stylesheet" href="/assets/balancer/slider.css"/>
+
+    </head>
+    <body>
+        <section id="balancer">
+            <header id="balancerHeader">
+                
+                <img id="balancerLogo" src="/assets/balancer/balancer.svg"/>
+                <h1>Investment Pools</h1>
+                <button id="exitBtn">EXIT</button>
+            </header>
+            <section id="balancerBody">
+                <header id="resultsHeader">
+                    <div class="colStart"><img src="/assets/balancer/linkring.svg" /></div>
+                    <div class="col-two">Composition</div>
+                    <div class="col">Pool Value</div>
+                    <div class="col">Volume (24h)</div>
+                    <div class="colEnd">APR</div>
+                </header>
+                <div id="resultsBody">
+                    <div class="resultsRow">
+                        <div class="colStart">
+                            <img class="resultsCoin" src="/assets/billboard/bitcoin.png" />
+                            <img class="resultsCoin" src="/assets/billboard/coingecko.png" />
+                        </div>
+                        <div class="col-two">
+                            <div class="compItem">wstETH</div>
+                            <div class="compItem">WETH</div>
+
+                        </div>
+                        <div class="col">$<span class="poolValue">250,719,084</span></div>
+                        <div class="col">$<span class="volume">520,665</span></div>
+                        <div class="colEnd"><span class="apr">11.90</span>%<img src="" /></div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+        <div id="balancerModal" class="modal">
+            <div id="modal-content">
+                <header id="selectedPool__name"><span>INVEST:</span> <span id="poolName"> pool name </span><input type="button" value="close" id="closeModal"/></header>
+                <section id="selectedPool__amount">
+                    <div class="amountRow topRow">
+                        <h2>Amount to invest:</h2>
+                        <h2 id="amountPercent"><span>40</span>%</h2> 
+                    </div>
+                    <div class="amountRow">
+                        <h2>$<span id="amountInCash">49.08</span></h2>
+                        <input type="range" id="amountSlider" max="100" value="10" />
+                    </div>
+                </section>
+                <section id="balance">
+                    <div class="balanceRow">
+                        <div class="balanceCoinHolder">
+                            <img class="balanceCoin" src="/assets/balancer/dummyCoin.png"/>
+
+                        </div>
+                        <div class="balanceInToken">
+                            <h2 class="selectedBalance">0.645 <span class="balanceType">BAL</span></h2>
+                            <h4>Balance: <span class="totalBalance">1.654</span></h4>
+                        </div>
+                        <div class="balanceInCash">
+                            <h2>$<span  class="selectedAmount">39.22</span></h2>
+                            <h4><span class="selectedPercent">80</span>%</h4>
+                        </div>
+                    </div>
+                    <div class="balanceRow">
+                        <div class="balanceCoinHolder">
+                            <img class="balanceCoin" src="/assets/balancer/dummyCoin.png"/>
+                        </div>
+                        <div class="balanceInToken">
+                            <h2 class="selectedBalance">0.645 <span class="balanceType">BAL</span></h2>
+                            <h4>Balance: <span class="totalBalance">1.654</span></h4>
+                        </div>
+                        <div class="balanceInCash">
+                            <h2>$<span  class="selectedAmount">39.22</span></h2>
+                            <h4><span class="selectedPercent">80</span>%</h4>
+                        </div>
+                    </div>
+                </section>
+                <section id="balancerAction">
+                    <h3>Price impact: <span id="selectedPool__priceImpact">0.00</span>%</h3>
+                    <input type="button" id="approveTokens" value="Approve tokens">
+                </section>
+                
+            </div>
+        </div>
+    </body>
+</html>

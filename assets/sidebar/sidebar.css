@@ -1,0 +1,78 @@
+@font-face {
+  font-family: hellovetica;
+  src: url(./hellovetica.ttf);
+}
+
+@font-face {
+  font-family: vcr;
+  src: url(/assets/alerts/browserCheck/VCR_OSD_MONO_1.001.ttf);
+  font-weight: bold;
+}
+:root {
+  --mainColor: rgb(185, 158, 238);
+  --secondaryColor: palevioletred;
+  --contrastColor: #122938;
+  --accentColor: deepskyblue;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  /* height: 100%; */
+}
+
+.tabBody {
+  display: flex;
+  flex-direction: row;
+  width: 385px;
+  height: 1010px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: vcr; */
+  /* font-family: hellovetica; */
+}
+
+.sidebarTab {
+  width: 35px;
+  height: 157px;
+  background-size: cover;
+}
+
+#chatTab {
+  background-image: url("/assets/sidebar/chatTab.png");
+}
+
+#musicTab {
+  background-image: url("/assets/sidebar/musicTab.png");
+}
+
+.tabWindow {
+  background-color: var(--contrastColor);
+  background-image: url("/assets/sidebar/sidebarBG.png");
+  background-size: 50% 200px;
+  background-position: center;
+  width: 350px;
+  color: rgb(23, 21, 39);
+  margin-left: 0px;
+  transition: margin 1s;
+  transition-timing-function: ease;
+  border: 3px solid var(--contrastColor);
+}
+
+.tabContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.slideIn {
+  margin-left: -355px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabHolder {
+  display: flex;
+  flex-direction: column;
+}

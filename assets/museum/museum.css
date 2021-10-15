@@ -1,0 +1,142 @@
+#nftModal {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fbfbff;
+    background-image: linear-gradient(30deg, #eeefff 12%, transparent 12.5%, transparent 87%, #eeefff 87.5%, #eeefff), linear-gradient(150deg, #eeefff 12%, transparent 12.5%, transparent 87%, #eeefff 87.5%, #eeefff), linear-gradient(30deg, #eeefff 12%, transparent 12.5%, transparent 87%, #eeefff 87.5%, #eeefff), linear-gradient(150deg, #eeefff 12%, transparent 12.5%, transparent 87%, #eeefff 87.5%, #eeefff), linear-gradient(60deg, #eeefff77 25%, transparent 25.5%, transparent 75%, #eeefff77 75%, #eeefff77), linear-gradient(60deg, #eeefff77 25%, transparent 25.5%, transparent 75%, #eeefff77 75%, #eeefff77);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+    gap: 20px;
+    justify-content: space-between;
+    font-family: "Barlow", sans-serif;
+}
+
+#nftName {
+    font-size: 60px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#nftArtistHolder {
+    color: palevioletred;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: 3px solid palevioletred;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#nftPriceHolder {
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 40px;
+    flex-grow: 2;
+    margin: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.nftModalAsset {
+    /* height: 100%; */
+    flex: 1;
+    width: 550px;
+    height: 700px;
+}
+
+#nftInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nftModalBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    flex-grow: 1;
+    color: white;
+}
+
+#nftBuyBtn {
+    background-color: aquamarine;
+    color: teal;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#cancelNftBtn {
+    background-color: rgb(46, 41, 41);
+    color: tomato;
+}
+
+#raribleLinkBtn {
+    background-color: orange;
+    color: black;
+}
+
+.nftButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#nftDesc {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border: 3px solid rgb(46, 41, 41);
+    overflow: hidden;
+}
+
+.attribute {
+    display: flex;
+    flex-direction: row;
+}
+
+.attrKey {
+    background-color: orange;
+    color: rgb(46, 41, 41);
+    padding: 10px 0px;
+    text-align: center;
+    width: 50%;
+}
+
+.attrValue {
+    text-align: center;
+    align-self: center;
+    width: 50%;
+
+}
+
+.priceRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.nftImgHolder {
+    flex: 1;
+    /* height: 650px; */
+    border: 3px solid red;
+}
+
+#bldgNft {
+    height: 200;
+
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,125 @@
+<!-- Crafting Table Dom Element -->
+<head>
+    <head>
+        <style>
+            #inventroy {
+                width: 400px;
+                border-radius: 10px;
+                padding: 20px;
+                min-height: 50px;
+                min-width: 50px;
+            }
+            .inventoryItem {
+                width: 50px;
+                height: 50px;
+                border: 3px solid darkslategrey;
+            }
+
+            #craftingTable {
+
+                border-radius: 10px;
+                padding: 40px;
+                border-radius: 20px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                background-color: white;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            #craftBtn {
+                padding: 20px;
+                border: none;
+                border-radius: 20px;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                font-size: 30px;
+                width: 50%;
+                color: white;
+                background-color: palevioletred;
+            }
+
+            #cancelBtn {
+                padding: 20px;
+                border: none;
+                border-radius: 20px;
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                font-size: 30px;
+                width: 50%;
+                color: white;
+                background-color: darkslategray;
+            }
+
+            .craftItem {
+                border: 3px solid darkslategrey;
+                background-color: lightslategrey;
+                width: 200px;
+                height: 200px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .craftMath {
+                font-size: 40px;
+                font-weight: bold;
+                align-self: center;
+                margin: 0px 20px;
+            }
+
+            .craftItem img {
+                height: 100%;
+                margin: 0px auto;
+            }
+
+            #swordUp {
+                margin-left: 40%;
+            }
+
+            #sword {
+                margin-left: 20%;
+                opacity: .6;
+            }
+
+            .craftBtnHolder {
+                display: flex;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="craftingTable">
+            <div class="craftItem">
+                <img id="swordBot" src="assets/crafting/items/swordbottom.png"/>
+            </div>
+            <p class="craftMath">
+                +
+            </p>
+            
+            <div class="craftItem">
+                <img id="swordUp" src="assets/crafting/items/swordupper.png"/>
+            </div>
+            <p class="craftMath">
+                =
+            </p>
+            
+            <div class="craftItem" id="craftResult">
+                <img id="sword" src="assets/crafting/items/sword.png"/>
+                <!-- <img class="hidden" src="./loading.png" id="loadingIcon"/> -->
+            </div>
+            
+        </section>
+        <div class="craftBtnHolder">
+            <input type="button" name="craftBtn" id="craftBtn" value="CRAFT"/>
+            <input type="button" name="cancelBtn" id="cancelBtn" value="CANCEL"/>    
+        </div>
+        <!-- <section id="inventory">
+
+        </section> -->
+    </body>
+</head>

@@ -1,0 +1,197 @@
+.chatInput {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* font-family: hellovetica; */
+}
+
+#roomTitle {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    background-image: url("/assets/chat/chatHeader.png");
+    background-position: center;
+    background-size: 25% 65px;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#messageInput {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 0px;
+    width: 100%;
+    font-size: .7rem;
+}
+
+#messages {
+    height: 350px;
+    background-color: rgb(224, 223, 221);
+    width: 100%;
+    overflow-y: auto;
+    margin: 0px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border: 3px solid palevioletred;
+    word-break: break-all;
+    scroll-behavior: smooth;
+    /* font-family: vcr; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sendButton {
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--contrastColor);
+    border: 3px solid var(--accentColor);
+    color: var(--accentColor);
+    flex-grow: 1;
+}
+
+#textInput {
+    padding: 10px;
+    border: 3px solid var(--accentColor);
+    width: 150px;
+    flex-grow: 2;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#chatUsers {
+    display: block;
+    width: 100%;
+    height: 374px;
+    padding: 0px 20px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#chatUsers__display {
+    overflow-y: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome {
+    background-color: #c5f1a3;
+    border: 3px solid rgb(135, 196, 62);
+    color: rgb(59, 56, 56);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+}
+
+#chatTabs {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    min-height: 50px;
+}
+
+#chatButtonActive {
+    border: none;
+    background-color: var(--contrastColor);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0px;
+    border: 3px solid palevioletred;
+    margin: 0px;
+    border-bottom: none;
+}
+
+.chatButton {
+    border: 3px solid var(--mainColor);
+    color: white;
+    background-color: var(--contrastColor);
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.leaveButton {
+    border: 1px solid white;
+    border-radius: 100%;
+    color: rgb(37, 31, 31);
+    margin-left: 5px;
+    padding: 3px 7px 3px 5px;
+    align-self: center;
+}
+
+#hideChat {
+    border: 3px solid var(--secondaryColor);
+    color: white;
+    background-color: var(--contrastColor);
+    padding: 10px 20px;
+    margin: auto 10px auto auto;
+    align-self: center;
+}
+
+.chatUser {
+    border: 3px solid var(--accentColor);
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    min-height: 27px;
+}
+
+.chatUser strong {
+    align-self: center;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+.pmButton {
+    border: none;
+    background-color: var(--mainColor);
+    border-left: 3px solid var(--accentColor);
+    color: var(--contrastColor);
+    align-content: center;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.eventText {
+    font-size: 1rem;
+    color: var(--mainColor);
+    text-align: center;
+
+}
+
+#chatroomName {
+    margin: 0px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+#chatUsers__title {
+    margin: 5px;
+}
+
+.yourMsg {
+    color: var(--accentColor);
+}
+
+.otherMsg {
+    color: var(--secondaryColor);
+}
+
+.message {
+    font-size: 1rem;
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+.hidden {
+    display: none;
+}

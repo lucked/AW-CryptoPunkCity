@@ -1,0 +1,98 @@
+<!-- Yearn Bank info display Dom Element -->
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/bank/yearnBank.css">
+</head>
+
+<body id="bankBody">
+    <div style="margin: 0 auto">
+        <div id="transaction-modal">
+            <div class="lds-spinner" id="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h2 class="transaction-text">Transaction is processing</h2>
+        </div>
+        <div class="container">
+            <div class="header" style="display: flex; justify-content: center; align-items:center; padding-left: 50px;">
+                <img src="https://assets.trustwalletapp.com/blockchains/ethereum/assets/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e/logo.png"
+                    style="height: 35px; margin-right: 10px;">
+                <h2>yearn.finance</h2>
+                <button id="exitBtn">EXIT</button>
+            </div>
+            <ul class="yearn-table">
+                <li class="table-header">
+                    <div class="col col-1">Asset</div>
+                    <div class="col col-2"></div>
+                    <div class="col col-3">Fees</div>
+                    <div class="col col-4">Holdings</div>
+                    <div class="col col-5">Net APY</div>
+                    <div class="col col-6">Vault Assets</div>
+                    <div class="col col-7">Available to deposit</div>
+                    <div class="col col-8"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="expandModal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal__header">
+                <h2 class="modal-header" id="expand-header" class="expand-header"></h2>
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modalRow">
+                <h3 class="title">APY:</h3>
+                <h3 class="title" id="expand-apy">-</h3>
+            </div>
+            <div class="modalRow">
+                <h3 class="title">Contract:</h3>
+                <a href="https://yearn.finance/vaults/" target="_blank">
+                    <h3 class="title" id="expand-apy">View on yearn.finance</h3>
+                </a>
+            </div>
+            <div class="modal-switcher">
+                <div class="switcher__buttons">
+                    <div id="switch-deposit" class="switcher-item switch-active">DEPOSIT</div>
+                    <div id="switch-withdraw" class="switcher-item">WITHDRAW</div>
+                </div>
+            </div>
+
+            <div class="switched-content">
+                <div id="switched-deposit">
+                    <div class="modalRow">
+                        <h3 class="title">Balance:</h3>
+                        <h3 class="title" id="expand-balance">-</h3>
+                    </div>
+                    <input class="modal-input" type="text" placeholder="Amount" id="deposit-amount" />
+                    <div class="asset-button" id="modal-deposit-button">Make Deposit</div>
+                </div>
+                <div id="switched-withdraw">
+                    <div class="modalRow">
+                        <h3 class="title">Deposited:</h3>
+                        <h3 class="title" id="expand-deposited">-</h3>
+                    </div>
+                    <input class="modal-input" type="text" placeholder="Amount" id="withdraw-amount" />
+                    <div class="asset-button" id="modal-withdraw-button">Withdraw</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: vcr;
+  src: url(/assets/alerts/browserCheck/VCR_OSD_MONO_1.001.ttf);
+  font-weight: bold;
+}
+
+#alertModal {
+  padding-top: 60px;
+  margin: 15% auto;
+  width: 500px;
+  height: 200px;
+  font-family: vcr;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  background-image: url("/assets/alerts/browserCheck/messagebox.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#alertBG {
+  height: 800px;
+  width: 1300px;
+  background-color: rgba(18, 19, 17, 0.5);
+  padding: 80px;
+  position: absolute;
+}
+
+#alertClose {
+  margin-top: 40px;
+  padding: 10px 40px;
+  border: none;
+  font-family: vcr;
+  color: black;
+  font-size: 2rem;
+  background-image: url("/assets/alerts/browserCheck/button.png");
+  background-size: cover;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#alertText {
+  padding: 0px 35px;
+}

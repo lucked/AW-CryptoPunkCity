@@ -1,0 +1,29 @@
+#lightHolder {
+    position: absolute;
+    background-image: url(/assets/login/atlantis.gif), url(/assets/login/atlantisGlow.gif);
+    background-size: 100%, 100%;
+    width: 700px; height: 700px;
+    top: 20px;
+    left: 300px;
+}
+
+#char {
+    position: absolute;
+    width: 200px;
+    top: 220px;
+    left: 1105px;
+}
+
+#building {
+    position: absolute;
+    width: 500px;
+    top: 400px;
+    left: 400px;
+}
+
+#loginHolder {
+    position: absolute;
+    height: 1300px;
+    width: 800px;
+    border: 3px solid red;
+}

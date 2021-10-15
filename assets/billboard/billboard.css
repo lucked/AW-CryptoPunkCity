@@ -1,0 +1,159 @@
+@font-face {
+  font-family: vcr;
+  src: url(/assets/alerts/browserCheck/VCR_OSD_MONO_1.001.ttf);
+  font-weight: bold;
+}
+
+#billboard {
+  height: 340px;
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding-top: 5px;
+  font-family: vcr;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
+}
+
+#cgHeader {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  font-size: 2rem;
+  color: rgb(136, 255, 0);
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* background-color: black; */
+  /* border: 5px solid rgb(43, 124, 43); */
+}
+
+#cgHeader-title {
+  align-self: center;
+}
+
+#cgHeader-img {
+  width: 50px;
+  height: 50px;
+}
+
+#cgBody::-webkit-scrollbar {
+  display:none;
+}
+
+#cgBody {
+  flex: 3;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 3px solid green; */
+  height: 350px;
+  overflow-y: auto;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 15px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.coinDisplay {
+    /* width: 30%; */
+  flex: 1;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 1rem;
+  /* justify-content: space-between; */
+  align-items: center;
+  align-content: center;
+  /* background-color: white; */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#topRow {
+  font-size: 1.4rem;
+}
+
+.coinDisplay-price {
+  font-weight: bold;
+}
+
+
+
+.coinDisplay-img {
+  flex: 1;
+  height: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 3px solid white;
+  margin: 0px auto;
+}
+
+.coinDisplay-info {
+  flex: 5;
+  flex-grow: 5;
+}
+
+.coinDisplay-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.coinDisplay-key {
+  /* color: rgb(89, 104, 104); */
+  font-weight: bold;
+  text-align: center;
+}
+
+.coinDisplay-icon {
+  align-self: center;
+}
+
+#green {
+  color: #4cce01;
+}
+
+#red {
+  color: #ff3600;
+}
+
+.coinDisplay-data {
+    text-align: left;
+    font-size: 1.2rem;
+    border-left: 3px solid rgb(56, 56, 56);
+    padding-left: 5px;
+    flex: 2;
+}
+
+.coinName {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+}
+
+.scrollBtn {
+  border: none;
+  font-size: 1rem;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 154);
+  color: rgb(28, 131, 2);
+}

@@ -1,0 +1,290 @@
+#balancer {
+    font-family: vcr;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 10px;
+    width: 1320px;
+    height: 820px;
+    box-sizing: border-box;
+    /* border: 3px solid red; */
+}
+
+#balancerHeader {
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+    background-image: url("https://app.balancer.fi/images/backgrounds/bg-header.svg");
+    background-size: cover;
+    color: white;
+    fill: white;
+    padding: 30px;
+}
+
+#exitBtn {
+    background-color: palevioletred;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+#balancerHeader h1 {
+    margin: 0px;
+    padding: 0px;
+    text-shadow: black 5px 5px 5px;
+}
+
+#balancerBody {
+    display: flex;
+    flex-direction: column;
+}
+
+#balancerLogo {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: black 5px 5px 5px;
+}
+
+#resultsHeader {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: rgb(0, 140, 255);
+    fill: rgb(0, 140, 255);;
+    /* border: 3px solid red; */
+}
+#resultsBody {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 600px;
+    font-size: 1.3rem;
+    background-color: whitesmoke;
+    /* border: 3px solid green; */
+}
+
+.resultsRow {
+    padding: 5px;
+}
+.resultsRow:hover {
+    background-color:rgb(0, 98, 255);
+    color: whitesmoke;
+}
+.colStart {
+    /* border: 3px solid red; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    pointer-events: none;
+}
+
+.col {
+    flex: 2;
+    /* border: 3px solid red; */
+    display: flex;
+    width: 50px;
+    align-items: center;
+    align-content: center;
+    pointer-events: none;
+}
+
+.col-two {
+    flex: 3;
+    /* border: 3px solid red; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    align-content: center;
+    pointer-events: none;
+}
+
+.colEnd {
+    text-align: right;
+    /* border: 3px solid red; */
+    flex: 1;
+    display: flex;
+    /* width: 50px; */
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    pointer-events: none;
+}
+
+.resultsRow {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.resultsCoin {
+    height: 40px;
+    width: 40px;
+    margin-right: -20px;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0px;
+}
+
+.compItem {
+    background-color: rgb(151, 151, 151);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    overflow: hidden;
+}
+
+#balancerModal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    width: 1300px;
+    height: 800px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal-content {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    left: 350px;
+    top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 700px;
+    justify-content: space-evenly;
+    font-family: "Barlow", sans-serif;
+}
+
+#selectedPool__amount {
+    border-radius: 10px;
+    border: 3px solid grey;
+    margin: 0px 10px;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#selectedPool__name {
+    padding: 10px;
+    font-size: 2rem;
+    color: rgb(33, 72, 143);
+    display: flex;
+    justify-content: space-between;
+}
+
+#selectedPool__amount input{
+    color: salmon;
+    fill: salmon;
+}
+
+#balance {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-top: 3px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+    overflow-y: auto;
+}
+
+.balanceRow {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+
+}
+
+#balancerAction {
+    padding: 10px;
+    color:rgb(97, 97, 97);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+#approveTokens {
+    padding: 20px;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    margin: auto;
+}
+
+.amountRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.topRow h2 {
+    color:grey;
+    /* font-size: 1.5rem; */
+    font-weight: 300;
+}
+
+.balanceCoin {
+    box-sizing: border-box;
+    padding: 10px;
+    height: 100%;
+    margin-left: 28%;
+    align-self: center;
+    /* border: 3px solid blue; */
+}
+
+.balanceCoinHolder {
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+
+.balanceInToken {
+    flex: 1;
+    text-align: center;
+}
+
+.balanceInCash {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#amountSlider {
+    width: 50%;
+}
+
+#closeModal {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: royalblue;
+    color: whitesmoke;
+    font-size: 1rem;
+}
